@@ -1,12 +1,3 @@
-"""Train the five required classifiers and save them for the Streamlit app.
-
-The held-out test split is written to test_data.csv. The app scores that file
-with the saved pipelines and does not fit anything.
-
-Run from this directory:
-    python train.py
-"""
-
 from pathlib import Path
 import warnings
 

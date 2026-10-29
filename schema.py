@@ -1,10 +1,3 @@
-"""Column roles for the UCI academic-outcome dataset.
-
-Nominal fields are stored as integer codes. Those codes are labels, not
-magnitudes, so they are one-hot encoded. Binary flags and true numeric
-measurements stay numeric and are standardised.
-"""
-
 TARGET_COLUMN = "Target"
 
 # Official class order used for every report and confusion matrix.
