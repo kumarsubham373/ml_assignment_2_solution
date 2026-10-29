@@ -1,14 +1,3 @@
-"""Shared metric definitions so training and the Streamlit app agree.
-
-Precision, recall, and F1 are macro-averaged across Dropout, Enrolled, and
-Graduate. Macro averaging gives each class the same weight. Weighted recall
-would be identical to accuracy on a single-label problem, so it would not
-be a separate measurement.
-
-AUC is the weighted one-vs-rest ROC AUC. The weight is the class support,
-and the scores are the model probabilities.
-"""
-
 import numpy as np
 from sklearn.metrics import (
     accuracy_score,
@@ -96,7 +85,6 @@ def matrix(y_true, y_pred):
 
 
 def _align_probabilities(y_proba, proba_classes):
-    """Put probability columns in CLASS_ORDER, which is also sorted order."""
     class_to_index = {label: index for index, label in enumerate(proba_classes)}
     missing = [label for label in CLASS_ORDER if label not in class_to_index]
     if missing:

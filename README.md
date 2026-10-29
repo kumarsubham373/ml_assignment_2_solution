@@ -27,9 +27,8 @@ Split: stratified 80/20, `random_state=42`. Training rows: 3,539. Test rows: 885
 
 ## c. Github Repository Link
 
-https://github.com/YOUR_USERNAME/academic-outcome-classifier
+https://github.com/kumarsubham373/ml_assignment_2_solution.git
 
-Replace `YOUR_USERNAME` with the public repository URL before this README is copied into the submission PDF.
 
 The repository contains:
 
@@ -95,5 +94,3 @@ pip install -r requirements.txt
 python train.py
 streamlit run app.py
 ```
-
-`python train.py` prints the comparison table. That command is the run to capture on BITS Virtual Lab.

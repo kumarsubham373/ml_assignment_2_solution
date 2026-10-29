@@ -153,6 +153,8 @@ def main():
         """
         <div class="hero">
             <h1>Academic Outcome Bench</h1>
+            <h3>By: Shubham Kumar</h3>
+            <h3>ID: 2026AJ05228</h3>
             <p>Five saved classifiers score a labelled student file.
             Nothing is retrained in the browser.</p>
         </div>
